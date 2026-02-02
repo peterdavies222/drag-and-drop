@@ -1,11 +1,10 @@
 .canvas {
-  position: relative;
   margin: 2rem;
   height: calc(100vh - 4rem);
   background: rgb(212, 212, 212);
+  border-radius: 1rem;
 
   .block {
-    position: absolute;
     display: block;
     width: 100px;
     height: 100px;
@@ -14,6 +13,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border-radius: 1rem;
     transition:
       box-shadow 0.2s,
       background-color 0.2s;
@@ -22,6 +22,23 @@
       box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 0.2);
       background: rgb(168, 131, 131);
     }
+
+    p {
+      user-select: none;
+    }
+  }
+}
+
+.canvas-2 {
+  background: rgb(208, 222, 142);
+  width: 50%;
+  height: 50vh;
+  margin: 0 auto 2rem;
+
+  .block-2 {
+    width: 50px;
+    height: 50px;
+    background: rgb(67, 143, 67);
 
     p {
       user-select: none;
